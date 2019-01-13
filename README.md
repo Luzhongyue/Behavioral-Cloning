@@ -19,11 +19,12 @@ The lab enviroment can be created with CarND Term1 Starter Kit. Click [here]
 
 ## Project structure
 
-* drive.py Implements driving simulator callbacks, essentially communicates with the driving simulator app providing model predictions 
-           based on real-time data simulator app is sending.
-* model.py Containing the script to create and train the model
-* video.py Using to create the video recording when in autonomous mode.
-* model_my.h5 Model weights.
+* drive.py - Implements driving simulator callbacks, essentially communicates with the driving simulator app providing model predictions 
+             based on real-time data simulator app is sending.
+* model.py - Containing the script to create and train the model
+* video.py - Using to create the video recording when in autonomous mode.
+* model_my.h5 - Model weights.
+* run1.mp4 - The video recording when in autonomous mode.
 
 ## Details About Files In This Directory
 
