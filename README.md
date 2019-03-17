@@ -96,7 +96,7 @@ Will run the video at 48 FPS. The default FPS is 60.
 #### An appropriate model architecture has been employed
 
 The Model Architecture was published by the autonomous vehicle team at NVIDIA. In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set.
-Firstly, the number of epochs is 3.I found that the loss of training set and validation set has been going down. Then I set the number of epochs is 5.The model consists of three convolution neural network with 5x5 filter sizes and depths are 12,24,36. There are also two convolution neural network with 3x3 filter sizes and depths are both 64.Then the model has a flatten layer and four fully connected layer with the depths are 100,50,10,1.The model includes RELU layers to introduce nonlinearity, and the data is normalized in the model using a Keras lambda layer .What’s more, the images resize to 66*200 and make cropping using a Keras lambda layer.
+Firstly, the number of epochs is 30.I found that the loss of training set and validation set has been going down. Then I set the number of epochs is 50.The model consists of three convolution neural network with 5x5 filter sizes and depths are 12,24,36. There are also two convolution neural network with 3x3 filter sizes and depths are both 64.Then the model has a flatten layer and four fully connected layer with the depths are 100,50,10,1.The model includes RELU layers to introduce nonlinearity, and the data is normalized in the model using a Keras lambda layer .What’s more, the images resize to 66*200 and make cropping using a Keras lambda layer.
 ![](https://github.com/Luzhongyue/Behavioral-Cloning/blob/master/Images/NVDIA-model.png)
 
 #### Appropriate training data
@@ -105,7 +105,7 @@ Training data comes from https://github.com/shawshany/behavioral-clone/tree/mast
 
 #### Creation of the Training Set & Training Process
 
-I randomly shuffled the data set and put 20% of the data into a validation set. I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 5 . I used an adam optimizer so that manually training the learning rate wasn't necessary.
+I randomly shuffled the data set and put 20% of the data into a validation set. I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 50 . I used an adam optimizer so that manually training the learning rate wasn't necessary.
 
 #### Data Augmentation
 
