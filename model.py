@@ -123,7 +123,7 @@ model.add(Cropping2D(cropping=((50,20),(0,0)),input_shape=(160,320,3)))
 #normalize and #resize the image to acceralate the training step
 model.add(Lambda(resize_img))
 model.add(Lambda(lambda x:x/255-0.5))
-#add three 5*5 convolution layers,output depth:24,36,48
+#add three 5*5 convolution layers,output depth:12,24,36
 model.add(Conv2D(12,(5,5),strides=(2,2),padding='valid',activation='relu'))
 model.add(Conv2D(24,(5,5),strides=(2,2),padding='valid',activation='relu'))
 model.add(Conv2D(36,(5,5),strides=(2,2),padding='valid',activation='relu'))
